@@ -1,0 +1,29 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px; 
+    background-color: #F0DBC9;
+    padding: 10px;
+}
+  
+.app-logo {
+    height: 80px;
+    width: 80px; 
+    margin-right: auto;
+    background-image: url("./LogoNamePrimaryCircle.png");
+    background-size: cover;
+}
+
+.login {
+    padding: 5px;
+    margin-left: 10px;
+    background-color: #895039;
+    color: #F9F9F9;
+}
+
+.nav-button {
+    padding: 20px 10px;
+    border-right: 1px solid black;
+    text-align: center;
+}
