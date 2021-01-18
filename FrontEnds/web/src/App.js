@@ -21,10 +21,10 @@ function App() {
 
           </div>
         </div>
-        <footer>
-          <p>© {today.getFullYear()} LiftFitLog - Jonathan Ash</p>
-        </footer>
       </div>
+      <footer>
+          <p>© {today.getFullYear()} LiftFitLog - Jonathan Ash</p>
+      </footer>
     </div>
   );
 }
