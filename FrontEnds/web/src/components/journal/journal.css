@@ -1,0 +1,6 @@
+.journal {
+    display: flex;
+    align-self: stretch;
+    align-content: center;
+    flex-direction: column;
+}
