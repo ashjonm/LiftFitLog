@@ -1,4 +1,5 @@
-import NavBar from "./components/nav-bar/nav-bar"
+import NavBar from "./components/nav-bar/nav-bar";
+import Footer from "./components/footer/footer"
 import "./App.css";
 
 function App() {
@@ -22,9 +23,7 @@ function App() {
           </div>
         </div>
       </div>
-      <footer>
-          <p>© {today.getFullYear()} LiftFitLog - Jonathan Ash</p>
-      </footer>
+      <Footer today={today} />
     </div>
   );
 }
