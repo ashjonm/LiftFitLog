@@ -1,4 +1,5 @@
 .nav-bar {
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: flex-end;
