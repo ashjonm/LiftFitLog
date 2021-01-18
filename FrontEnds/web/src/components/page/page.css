@@ -40,7 +40,8 @@
 .page-body{
     display: flex;
     align-self: stretch;
+    flex-direction: column;
     min-height: calc(100vh - 230px);
-    padding: 0 40px;
+    padding: 0px 40px;
     background-image: linear-gradient(#0C181D, #1E3B48);
 }
