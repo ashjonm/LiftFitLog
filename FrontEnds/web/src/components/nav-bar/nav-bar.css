@@ -5,16 +5,17 @@
     justify-content: flex-end;
     height: 80px; 
     position: sticky;
-    background-color: #F0DBC9;
+    background-color: #234553;
     padding: 10px;
 }
   
 .app-logo {
     height: 80px;
-    width: 80px; 
+    width: 400px;
     margin-right: auto;
-    background-image: url("./LogoNamePrimaryCircle.png");
+    background-image: url("./LogoNamePrimaryRectangle.png");
     background-size: cover;
+    background-position: center;
 }
 
 .login {
@@ -28,4 +29,5 @@
     padding: 20px 10px;
     border-right: 1px solid black;
     text-align: center;
+    color: #F9F9F9;
 }
