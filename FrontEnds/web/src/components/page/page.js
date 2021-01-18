@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import Journal from "../journal/journal"
 import "./page.css";

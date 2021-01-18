@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="app">
       <NavBar />
-      <Page title="Fitnes Log" actText="+"/>
+      <Page title="Fitness Log" actText="+"/>
       <Footer today={today} />
     </div>
   );

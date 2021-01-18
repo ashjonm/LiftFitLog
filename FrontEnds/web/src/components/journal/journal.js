@@ -1,18 +1,17 @@
-import React from 'react';
+import React from "react";
 
+import Day from "./day"
 import "./journal.css";
 
 class Journal extends React.Component {
     render() {
         return (
             <div className="journal">
-
+                <Day />
+                <Day />
+                <Day />
+                <Day />
             </div>   
-            //     <div className="Day">
-            //     </div>
-            //     <hr/>
-            //     <div className="Day">
-            //     </div> 
         );
     };
 };
