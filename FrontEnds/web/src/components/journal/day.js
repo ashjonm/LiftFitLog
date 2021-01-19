@@ -1,5 +1,6 @@
 import React from "react";
 
+import WeightTrainingSet from "./weightTrainingSet";
 import "./day.css";
 
 class Day extends React.Component {
@@ -17,8 +18,12 @@ class Day extends React.Component {
                     <div className="day-weight">Weight: {day.weight} lbs</div>
                     <div className="day-notes">{day.notes || "Notes:"}</div>
                 </div>
-                <div className="day-entries"></div>
-        
+                <div className="day-entries">
+                    <WeightTrainingSet />
+                    <WeightTrainingSet />
+                    <WeightTrainingSet />
+                    <WeightTrainingSet />
+                </div>
             </div>   
         );
     };

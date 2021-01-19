@@ -1,0 +1,50 @@
+.set {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    margin: 2px 0;
+    padding: 2px;
+    border: 1px solid #0C181D;
+    background-color: #F9F9F9;
+}
+
+.set div {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+    color: #0C181D;
+    font-size: 16px;
+}
+
+.set-count {
+    font-weight: 700;
+}
+
+.set-repweight {
+    font-weight: 600;
+}
+
+.set-weight-training {
+    padding: 0 1px;
+    border: 1px solid #0C181D;
+    background-color: #14B961;
+    color: #F9F9F9 !important;
+    font-size: 12px !important;
+    font-weight: 600;
+}
+
+.set button {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    background-color: #895039;
+    color: #F9F9F9;
+}
+
+.set-count-increase {
+    margin: 2px 4px 2px auto;
+} 
+
+.set-edit {
+    margin: 2px 4px;
+}
