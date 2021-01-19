@@ -36,6 +36,30 @@
     font-size: 14px;
 }
 
+.day-button-container {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    margin-top: auto;
+    background-color: #D37F36 !important;
+}
+
+.day-button-container button {
+    display: flex;
+    align-content: center;
+    font-weight: 600;
+    background-color: #234553;
+    color: #F9F9F9;
+}
+
+.day-edit {
+    margin: 2px 4px;
+}
+
+.day-add-set {
+    margin: 2px 4px 2px auto;
+}
+
 .day-entries {
     display: flex; 
     flex-grow: 1;

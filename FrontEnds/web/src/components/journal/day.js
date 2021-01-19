@@ -20,6 +20,10 @@ class Day extends React.Component {
                     <div className="day-date">{day.date.toLocaleDateString("en-us", {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'})}</div>
                     <div className="day-weight">Weight: {day.weight} lbs</div>
                     <div className="day-notes">{day.notes || "Notes:"}</div>
+                    <div className="day-button-container">
+                        <button className="day-edit">Edit</button>
+                        <button className="day-add-set">Add</button>
+                    </div>
                 </div>
                 <div className="day-entries">
                     <WeightTrainingSet />
