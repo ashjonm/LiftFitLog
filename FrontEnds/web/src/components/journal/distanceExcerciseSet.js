@@ -27,7 +27,7 @@ class DistanceExcerciseSet extends React.Component {
 
         return (
             <div className="set">
-                <div className="set-count-distance">{set.count}x</div>
+                <div className="set-count-hidden">{set.count}x</div>
                 <div className="set-name"><div className="set-distance-excercise">D</div> - {set.name}</div>
                 <div className="set-distance">{set.distance} mi</div>
                 <div className="set-duration">in {set.duration/60} min</div>

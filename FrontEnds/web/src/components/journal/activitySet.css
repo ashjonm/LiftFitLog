@@ -1,17 +1,17 @@
-.set-distance-excercise {
+.set-activity {
     display: flex;
     justify-content: center;
     padding: 0 1px;
     border: 1px solid #0C181D;
     height: 16px;
     width: 16px;
-    background-color: #CF206C;
+    background-color: #9D1FCF;
     color: #F9F9F9 !important;
     text-align: center;
     font-size: 12px !important;
     font-weight: 600;
 }
 
-.set-edit-distance {
+.set-edit-activity {
     margin: 2px 4px 2px auto;
 }

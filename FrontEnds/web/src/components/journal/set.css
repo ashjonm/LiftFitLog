@@ -27,3 +27,8 @@
 .set-count {
     font-weight: 700;
 }
+
+.set-count-hidden {
+    font-weight: 700;
+    visibility: hidden;
+}

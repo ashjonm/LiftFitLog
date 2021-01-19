@@ -13,7 +13,7 @@ class WeightTrainingSet extends React.Component {
         }
 
         const weightTrainingSet = {
-            type: setTypes.DistanceExcercise,
+            type: setTypes.weightTraining,
             name: "Chest Press",
             weight: 190,
             reps: 7,

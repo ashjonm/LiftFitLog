@@ -3,6 +3,7 @@ import React from "react";
 import WeightTrainingSet from "./weightTrainingSet";
 import CalisthenicsSet from "./calisthenicsSet";
 import DistanceExcerciseSet from "./distanceExcerciseSet";
+import ActivitySet from "./activitySet";
 import "./day.css";
 
 class Day extends React.Component {
@@ -24,7 +25,7 @@ class Day extends React.Component {
                     <WeightTrainingSet />
                     <CalisthenicsSet />
                     <DistanceExcerciseSet />
-                    <WeightTrainingSet />
+                    <ActivitySet />
                 </div>
             </div>   
         );
