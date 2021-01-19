@@ -15,12 +15,12 @@ class CalisthenicsSet extends React.Component {
         const calisthenicsSet = {
             type: setTypes.Calisthenics,
             name: "Situp",
-            reps: 7,
-            extra: 15,
+            reps: 20,
+            extra: 5,
             intensity: 75,
             duration: 60*2,
             notes: "90s of rest between sets",
-            count: 2
+            count: 5
         }
 
         const set = calisthenicsSet;
