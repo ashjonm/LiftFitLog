@@ -1,20 +1,22 @@
-.set-weight-training {
+.set-count-distance {
+    visibility: hidden;
+    font-weight: 700;
+}
+
+.set-distance-excercise {
     display: flex;
     justify-content: center;
     padding: 0 1px;
     border: 1px solid #0C181D;
     height: 16px;
     width: 16px;
-    background-color: #14B961;
+    background-color: #CF206C;
     color: #F9F9F9 !important;
+    text-align: center;
     font-size: 12px !important;
     font-weight: 600;
 }
 
-.set-count-increase {
+.set-edit-distance {
     margin: 2px 4px 2px auto;
-} 
-
-.set-edit {
-    margin: 2px 4px;
 }
