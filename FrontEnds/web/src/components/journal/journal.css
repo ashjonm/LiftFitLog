@@ -3,4 +3,5 @@
     align-self: stretch;
     align-content: center;
     flex-direction: column;
+    padding: 10px 20px;
 }
