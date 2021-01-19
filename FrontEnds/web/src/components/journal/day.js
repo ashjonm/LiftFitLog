@@ -10,7 +10,7 @@ class Day extends React.Component {
         const day = {
             date: new Date("01/13/2021"),
             weight: 287.3,
-            notes: "Had a good day at the gym."
+            notes: "Chest & Arm Day"
         };
 
         return (

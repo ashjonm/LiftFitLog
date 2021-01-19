@@ -28,11 +28,11 @@ class CalisthenicsSet extends React.Component {
         let extraText = "";
 
         if (set.extra && set.extra > 0) {
-            extraText += `w\ ${set.extra} lbs of resist`
+            extraText += `w/ ${set.extra} lbs of resist`
         } ;
 
         if (set.extra && set.extra < 0) {
-            extraText += `w\ ${set.extra * (-1)} lbs of assist`
+            extraText += `w/ ${set.extra * (-1)} lbs of assist`
         };
 
         return (
