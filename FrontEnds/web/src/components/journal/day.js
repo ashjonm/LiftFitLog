@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 
 import WeightTrainingSet from "./weightTrainingSet";
 import CalisthenicsSet from "./calisthenicsSet";
@@ -12,14 +12,15 @@ export default function Day() {
         calisthenics: "Calisthenics",
         distanceExcercise: "DistanceExcercise",
         activity: "Activity"
-    }
+    };
 
-    const day = {
+    let disday = {
         date: new Date("01/13/2021"),
         weight: 287.3,
         notes: "Chest & Arm Day",
         sets: [
             {
+                id: 1,
                 type: setTypes.weightTraining,
                 name: "Chest Press",
                 weight: 190,
@@ -30,6 +31,7 @@ export default function Day() {
                 count: 2
             },
             {
+                id: 2,
                 type: setTypes.calisthenics,
                 name: "Situp",
                 reps: 20,
@@ -40,6 +42,7 @@ export default function Day() {
                 count: 5
             },
             {
+                id: 3,
                 type: setTypes.calisthenics,
                 name: "Pullup",
                 reps: 20,
@@ -50,6 +53,7 @@ export default function Day() {
                 count: 5
             },
             {
+                id: 4,
                 type: setTypes.distanceExcercise,
                 name: "Jog",
                 extra: 15,
@@ -60,6 +64,7 @@ export default function Day() {
                 count: 1
             },
             {
+                id: 5,
                 type: setTypes.activity,
                 name: "Yoga",
                 duration: 60 * 15,
@@ -68,6 +73,7 @@ export default function Day() {
                 count: 1
             },
             {
+                id: 6,
                 type: setTypes.weightTraining,
                 name: "Bench Press",
                 weight: 140,
@@ -78,6 +84,14 @@ export default function Day() {
                 count: 3
             }
         ]
+    };
+
+    const [day, setDay] = useState(disday);
+
+    let incSetCount = (id) => {
+        let incSet = day.sets.filter(s => s.id === id)[0];
+        incSet.count ++;
+        setDay(day);
     };
 
     return (
@@ -94,16 +108,16 @@ export default function Day() {
             <div className="day-entries">
                 {day.sets.map(s => {
                     if (s.type === setTypes.distanceExcercise) {
-                        return <DistanceExcerciseSet set={s} />;
+                        return <DistanceExcerciseSet key={s.id} set={s} />;
                     };
                     if (s.type === setTypes.weightTraining) {
-                        return <WeightTrainingSet set={s} />;
+                        return <WeightTrainingSet key={s.id} set={s} incSetCount={incSetCount} />;
                     };
                     if (s.type === setTypes.activity) {
-                        return <ActivitySet set={s} />;
+                        return <ActivitySet key={s.id} set={s} />;
                     };
                     if (s.type === setTypes.calisthenics) {
-                        return <CalisthenicsSet set={s} />;
+                        return <CalisthenicsSet key={s.id} set={s} incSetCount={incSetCount} />;
                     };
                 })}
             </div>
