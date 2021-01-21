@@ -1,4 +1,4 @@
-.set {
+.entry {
     display: flex;
     align-content: flex-start;
     flex-direction: row;
@@ -8,7 +8,7 @@
     background-color: #F9F9F9;
 }
 
-.set div {
+.entry div {
     display: flex;
     align-items: center;
     margin: 0px 3px;
@@ -16,7 +16,7 @@
     font-size: 16px;
 }
 
-.set button {
+.entry button {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -24,11 +24,11 @@
     color: #F9F9F9;
 }
 
-.set-count {
+.entry-count {
     font-weight: 700;
 }
 
-.set-count-hidden {
+.entry-count-hidden {
     font-weight: 700;
     visibility: hidden;
 }

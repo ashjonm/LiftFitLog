@@ -1,17 +1,20 @@
-.set-activity {
+.entry-weight-training {
     display: flex;
     justify-content: center;
     padding: 0 1px;
     border: 1px solid #0C181D;
     height: 16px;
     width: 16px;
-    background-color: #9D1FCF;
+    background-color: #14B961;
     color: #F9F9F9 !important;
-    text-align: center;
     font-size: 12px !important;
     font-weight: 600;
 }
 
-.set-edit-activity {
+.entry-count-increase {
     margin: 2px 4px 2px auto;
+} 
+
+.entry-edit {
+    margin: 2px 4px;
 }
