@@ -5,25 +5,7 @@ import "./distanceExcerciseSet.css";
 
 class DistanceExcerciseSet extends React.Component {
     render() {
-        const setTypes ={
-            weightTraining: "WeightTraining",
-            calisthenics: "Calisthenics",
-            DistanceExcercise: "DistanceExcercise",
-            Activity: "Activity"
-        }
-
-        const distanceExcerciseSet = {
-            type: setTypes.DistanceExcercise,
-            name: "Jog",
-            extra: 15,
-            duration: 60*20,
-            distance: 1.5,
-            intensity: 75,
-            notes: "",
-            count: 1
-        }
-
-        const set = distanceExcerciseSet;
+        const set = this.props.set;
 
         return (
             <div className="set">

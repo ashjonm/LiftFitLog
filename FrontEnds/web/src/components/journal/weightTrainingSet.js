@@ -5,25 +5,7 @@ import "./weightTrainingSet.css";
 
 class WeightTrainingSet extends React.Component {
     render() {
-        const setTypes ={
-            weightTraining: "WeightTraining",
-            calisthenics: "Calisthenics",
-            DistanceExcercise: "DistanceExcercise",
-            Activity: "Activity"
-        }
-
-        const weightTrainingSet = {
-            type: setTypes.weightTraining,
-            name: "Chest Press",
-            weight: 190,
-            reps: 7,
-            isHypertrophy: false,
-            durration: 60*2,
-            notes: "90s of rest between sets",
-            count: 2
-        }
-
-        const set = weightTrainingSet;
+        const set = this.props.set;
 
         return (
             <div className="set">

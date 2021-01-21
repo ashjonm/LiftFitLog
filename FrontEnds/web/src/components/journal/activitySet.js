@@ -5,13 +5,6 @@ import "./activitySet.css";
 
 class ActivitySet extends React.Component {
     render() {
-        const setTypes ={
-            weightTraining: "WeightTraining",
-            calisthenics: "Calisthenics",
-            DistanceExcercise: "DistanceExcercise",
-            Activity: "Activity"
-        }
-
         const intensityTypes = {
             max:  { name: "Max", floor: 95 },
             high: { name: "High", floor: 80 },
@@ -21,16 +14,7 @@ class ActivitySet extends React.Component {
             min: { name: "Min", floor: 0 }
         }
 
-        const activitySet = {
-            type: setTypes.activitySet,
-            name: "Yoga",
-            duration: 60*15,
-            intensity: 45,
-            notes: "90s of rest between sets",
-            count: 1
-        }
-
-        const set = activitySet;
+        const set = this.props.set;
 
         let setIntensityText = "";
         
