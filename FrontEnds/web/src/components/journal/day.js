@@ -4,16 +4,10 @@ import WeightTrainingEntry from "./entries/weightTrainingEntry";
 import CalisthenicsEntry from "./entries/calisthenicsEntry";
 import DistanceExcerciseEntry from "./entries/distanceExcerciseEntry";
 import ActivityEntry from "./entries/activityEntry";
+import {entryTypes} from "../../constants/enums";
 import "./day.css";
 
 export default function Day() {
-    const entryTypes = {
-        weightTraining: "WeightTraining",
-        calisthenics: "Calisthenics",
-        distanceExcercise: "DistanceExcercise",
-        activity: "Activity"
-    };
-
     let defaultEntries= [
         {
             id: 1,
