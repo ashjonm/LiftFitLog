@@ -18,6 +18,8 @@ export default function Day(props) {
     },[day.id]);
     
     let incEntryCount = (id) => {
+        
+
         setEntries(
             entries.map(entry => 
                 entry.id === id ? {...entry, count: ++entry.count} : entry
