@@ -22,7 +22,7 @@ export default function CalisthenicsEntry(props) {
             <div className="entry-name"><div className="entry-calisthenics">C</div> - {entry.name}</div>
             <div className="entry-reps">{entry.reps} reps</div>
             <div className="entry-extra">{extraText}</div>
-            <button className="entry-count-increase"> + </button>
+            <button className="entry-count-increase" onClick={() => props.incEntryCount(entry.id)}> + </button>
             <button className="entry-edit">Edit</button>
         </div>
     );

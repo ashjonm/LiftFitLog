@@ -18,9 +18,11 @@ export default function Day(props) {
     },[day.id]);
     
     let incEntryCount = (id) => {
-        let incEntry = entries.filter(s => s.id === id)[0];
-        incEntry.count ++;
-        setEntries(entries);
+        setEntries(
+            entries.map(entry => 
+                entry.id === id ? {...entry, count: ++entry.count} : entry
+            )
+        );
     };
 
     return (
@@ -48,6 +50,7 @@ export default function Day(props) {
                     if (s.type === entryTypes.calisthenics) {
                         return <CalisthenicsEntry key={s.id} entry={s} incEntryCount={incEntryCount} />;
                     };
+                    return <></>
                 })}
             </div>
         </div>
