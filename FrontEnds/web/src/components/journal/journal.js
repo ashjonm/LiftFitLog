@@ -1,26 +1,14 @@
 import React, {useState, useEffect} from "react";
 
-import Day from "./day"
+import Day from "./day";
+import {getDays} from "../../services/dayService";
 import "./journal.css";
 
 export default function Journal() {
     const [days, setDays] = useState([]);
 
     useEffect(() => {
-        let day = {
-            date: new Date("01/13/2021"),
-            weight: 287.3,
-            notes: "Chest & Arm Day"
-        };
-    
-        let defaultDays = [
-                {...day, id:1, date:new Date("01/11/2021")},
-                {...day, id:2, date:new Date("01/12/2021")},
-                {...day, id:3, date:new Date("01/13/2021")},
-                {...day, id:4, date:new Date("01/14/2021")}
-        ];
-
-        setDays(defaultDays);
+        setDays(getDays());
     },[]);
 
     return (
