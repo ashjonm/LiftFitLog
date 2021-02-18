@@ -3,7 +3,7 @@ import React from "react";
 import "./entry.css";
 import "./distanceExcerciseEntry.css";
 
-export default function DistanceExcerciseEntry(props) {
+export default DistanceExcerciseEntry = props => {
     const {entry} = props;
 
     return (

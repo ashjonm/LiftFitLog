@@ -3,7 +3,7 @@ import React from "react";
 import "./entry.css";
 import "./activityEntry.css";
 
-export default function ActivityEntry(props) {
+export default ActivityEntry = props => {
     const intensityTypes = {
         max: { name: "Max", floor: 95 },
         high: { name: "High", floor: 80 },

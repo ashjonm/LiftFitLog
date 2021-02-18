@@ -3,7 +3,7 @@ import React from "react";
 import "./entry.css";
 import "./calisthenicsEntry.css";
 
-export default function CalisthenicsEntry(props) {
+export default CalisthenicsEntry = props => {
     const {entry} = props;
 
     let extraText = "";

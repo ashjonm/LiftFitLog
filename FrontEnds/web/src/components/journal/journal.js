@@ -4,7 +4,7 @@ import Day from "./day";
 import {getDays} from "../../services/dayService";
 import "./journal.css";
 
-export default function Journal() {
+export default Journal = () => {
     const [days, setDays] = useState([]);
 
     useEffect(() => {

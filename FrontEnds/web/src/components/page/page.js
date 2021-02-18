@@ -3,7 +3,7 @@ import React from "react";
 import Journal from "../journal/journal"
 import "./page.css";
 
-export default function Page(props) {
+export default Page = props => {
         return (
             <div className="page">
                 <div className="page-header"> 
