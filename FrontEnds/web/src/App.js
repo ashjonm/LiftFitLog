@@ -3,7 +3,7 @@ import Page from "./components/page/page";
 import Footer from "./components/footer/footer"
 import "./App.css";
 
-function App() {
+export default function App() {
   const today = new Date();
 
   return (
@@ -13,6 +13,4 @@ function App() {
       <Footer today={today} />
     </div>
   );
-}
-
-export default App;
+};
