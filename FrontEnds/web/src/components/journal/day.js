@@ -7,7 +7,7 @@ import ActivityEntry from "./entries/activityEntry";
 import {entryTypes} from "../../constants/enums";
 import "./day.css";
 
-export default function Day() {
+export default function Day(props) {
     let defaultEntries= [
         {
             id: 1,
@@ -75,11 +75,13 @@ export default function Day() {
         }
     ];
 
-    let day = {
-        date: new Date("01/13/2021"),
-        weight: 287.3,
-        notes: "Chest & Arm Day"
-    };
+    // let day = {
+    //     date: new Date("01/13/2021"),
+    //     weight: 287.3,
+    //     notes: "Chest & Arm Day"
+    // };
+
+    const {day} = props;
 
     const [entries, setEntries] = useState(defaultEntries);
 
