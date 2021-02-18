@@ -4,7 +4,7 @@ services:
   hello-world: 
     image: node:14-alpine
     working_dir: /app
-    command: sh -c "yarn start"
+    command: sh -c "yarn install && yarn start"
     ports: 
       - 3000:3000
     environment:
