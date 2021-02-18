@@ -15,7 +15,7 @@ export default function Day(props) {
 
     useEffect(() => {
         setEntries(getDayEntries(day.id));
-    },[]);
+    },[day.id]);
     
     let incEntryCount = (id) => {
         let incEntry = entries.filter(s => s.id === id)[0];
