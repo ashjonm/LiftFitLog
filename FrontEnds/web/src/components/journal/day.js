@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 
 import {getDayEntries} from "../../services/dayEntryService";
 import WeightTrainingEntry from "./entries/weightTrainingEntry";
@@ -11,10 +11,12 @@ import "./day.css";
 export default function Day(props) {
     const {day} = props;
 
-    let defaultEntries= getDayEntries(day.id);
+    const [entries, setEntries] = useState([]);
 
-    const [entries, setEntries] = useState(defaultEntries);
-
+    useEffect(() => {
+        setEntries(getDayEntries(day.id));
+    },[]);
+    
     let incEntryCount = (id) => {
         let incEntry = entries.filter(s => s.id === id)[0];
         incEntry.count ++;
