@@ -10,9 +10,9 @@ on:
 
   workflow_dispatch:
 
-  defaults:
-      run:
-        working-directory: FrontEnds/web
+defaults:
+    run:
+      working-directory: FrontEnds/web
 
 jobs:
   build-publish-on-github-pages:
