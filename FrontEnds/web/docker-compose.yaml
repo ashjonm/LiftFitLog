@@ -1,7 +1,7 @@
 version: '3'
 
 services: 
-  hello-world: 
+  lift-fit-log-web-ui: 
     image: node:14-alpine
     working_dir: /app
     command: sh -c "yarn install && yarn start"
