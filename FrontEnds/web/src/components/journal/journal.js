@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 import Day from "./day";
-import {getDays} from "../../services/dayService";
+import { getDays } from "../../services/dayService";
 import "./journal.css";
 
 export default function Journal() {
@@ -9,11 +9,19 @@ export default function Journal() {
 
     useEffect(() => {
         setDays(getDays());
-    },[]);
+    }, []);
 
     return (
-        <div className="journal">
-            {days.map(d => <Day key={d.id} day={d}/>)}
+        <div className="page">
+            <div className="page-header">
+                <div>Fitness Log</div>
+                <button className="page-action"> Add Day </button>
+            </div>
+            <div className="page-body">
+                <div className="journal">
+                    {days.map(d => <Day key={d.id} day={d} />)}
+                </div>
+            </div>
         </div>
     );
 };
