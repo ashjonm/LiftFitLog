@@ -2,7 +2,7 @@ import React from "react";
 
 import "./footer.css";
 
-export default Footer = props => {
+export default function Footer(props) {
     return (
         <div className="footer">
             <div className="footer-logo" />

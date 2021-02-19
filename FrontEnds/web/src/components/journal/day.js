@@ -8,7 +8,7 @@ import ActivityEntry from "./entries/activityEntry";
 import {entryTypes} from "../../constants/enums";
 import "./day.css";
 
-export default Day = props => {
+export default function Day(props) {
     const {day} = props;
 
     const [entries, setEntries] = useState([]);

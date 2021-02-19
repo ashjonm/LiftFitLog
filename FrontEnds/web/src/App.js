@@ -3,7 +3,7 @@ import Page from "./components/page/page";
 import Footer from "./components/footer/footer"
 import "./App.css";
 
-export default App = () => {
+export default function App() {
   const today = new Date();
 
   return (

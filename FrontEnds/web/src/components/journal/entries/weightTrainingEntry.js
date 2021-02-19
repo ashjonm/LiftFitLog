@@ -3,7 +3,7 @@ import React from "react";
 import "./entry.css";
 import "./weightTrainingEntry.css";
 
-export default WeightTrainingEntry = props => {
+export default function WeightTrainingEntry(props) {
     const {entry} = props;
 
     return (

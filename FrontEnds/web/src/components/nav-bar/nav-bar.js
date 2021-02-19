@@ -2,7 +2,7 @@ import React from "react";
 
 import "./nav-bar.css";
 
-export default NavBar = () => {
+export default function NavBar() {
     return (
         <div className="nav-bar">
             <div className="app-logo" />
