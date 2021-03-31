@@ -1,0 +1,50 @@
+# This is a basic workflow to help you get started with Actions
+
+name: FrontEnd-web-ui-CI
+
+on:
+  push:
+    branches: [ master ]
+    paths: 
+    - 'FrontEnds/web/'
+    - '.github/workflows/frontend-web-ui-ci.yaml'
+  pull_request:
+    branches: [ master ]
+    paths: 
+    - 'FrontEnds/web/'
+    - '.github/workflows/frontend-web-ui-ci.yaml'
+
+  workflow_dispatch:
+
+defaults:
+    run:
+      working-directory: FrontEnds/web
+
+jobs:
+  build-publish-on-github-pages:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Update homepage for github pages 
+        run: |
+          sed -i 's+"homepage": "."+"homepage": "https://ashjonm.github.io/LiftFitLog/"+g' package.json
+
+      - name: Build with Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn install
+      - run: yarn build
+      
+      - name: Publish to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with: 
+          branch: gh-pages
+          folder: FrontEnds/web/build

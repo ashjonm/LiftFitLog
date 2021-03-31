@@ -1,5 +1,6 @@
 {
-  "name": "web",
+  "name": "liftfitlog-web-ui",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
