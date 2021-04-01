@@ -5,9 +5,9 @@ name: FrontEnd-web-ui-CI
 on:
   push:
     branches: [ master ]
-    paths: 
-    - 'FrontEnds/web/'
-    - '.github/workflows/frontend-web-ui-ci.yaml'
+    # paths: 
+    # - 'FrontEnds/web/'
+    # - '.github/workflows/frontend-web-ui-ci.yaml'
   # pull_request:
   #   branches: [ master ]
   #   paths: 
