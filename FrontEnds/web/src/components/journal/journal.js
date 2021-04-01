@@ -14,7 +14,13 @@ export default function Journal() {
     }, []);
 
     const showAddDay = () => setIsShownAddDay(true);
-    const hideAddDay = () => setIsShownAddDay(false);
+    const hideAddDay = (isSuccess) => {
+        setIsShownAddDay(false);
+
+        if (isSuccess) {
+            setDays(getDays());
+        }
+    }
 
     return (
         <div className="page">

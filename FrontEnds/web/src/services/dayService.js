@@ -2,6 +2,15 @@ export function getDays() {
     return localDays;
 };
 
+export function addDay(day) {
+    let newDay = {...day, id = index++};
+    localDays.push(newDay);
+
+    return Promise.resolve(newDay);
+}
+
+let index = 5;
+
 const baseDay = {
     date: new Date("01/13/2021"),
     weight: 287.3,
