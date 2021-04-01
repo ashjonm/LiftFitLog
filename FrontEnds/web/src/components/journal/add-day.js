@@ -10,17 +10,17 @@ Modal.setAppElement('#root')
 
 export default function AddDay(props) {
     const [startDate, setStartDate] = useState(new Date());
-
-    const baseDay = {
-        date: new Date("02/20/2021"),
-        weight: 287.3,
-        notes: "Chest & Arm Day"
-    };
-
+    
     var handleSubmit = (e) => {
         e.preventDefault();
 
-        addDay(baseDay).then(
+        let newDay = {
+            date: startDate,
+            weight: document.getElementById("dayWeight").value,
+            notes: document.getElementById("dayNotes").value,
+        }
+
+        addDay(newDay).then(
             props.closeModal(true)
         );
     }
@@ -30,17 +30,17 @@ export default function AddDay(props) {
             <button className="close-button" onClick={props.closeModal}> X </button>
             <h1>New Day</h1>
             <h2>{startDate.toLocaleDateString("en-us", { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })}</h2>
-            <form onSubmit={handleSubmit}> 
+            <form id="addDay" onSubmit={handleSubmit}> 
                 <DatePicker selected={startDate} onChange={date => setStartDate(date)} />
                 <label> 
                     <strong>Weight: </strong>
-                    <input type="text" name="weight"/>
+                    <input id="dayWeight" type="text" name="weight"/>
                 </label>
                 <label> 
                     <strong>Notes: </strong>
-                    <input type="text" name="notes"/>
+                    <input id="dayNotes" type="text" name="notes"/>
                 </label>
-                <input type="submit" value="Create" />
+                <button value="Create">Create</button>
             </form>
         </Modal>
     );

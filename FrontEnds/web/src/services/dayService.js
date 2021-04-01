@@ -3,7 +3,7 @@ export function getDays() {
 };
 
 export function addDay(day) {
-    let newDay = {...day, id = index++};
+    let newDay = {...day, id:index++};
     localDays.push(newDay);
 
     return Promise.resolve(newDay);
