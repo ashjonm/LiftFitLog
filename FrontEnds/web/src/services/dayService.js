@@ -1,5 +1,5 @@
 export function getDays() {
-    return localDays;
+    return localDays.sort((a,b) => b.date - a.date);
 };
 
 export function addDay(day) {
