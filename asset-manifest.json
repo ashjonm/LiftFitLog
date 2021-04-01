@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/LiftFitLog/static/css/main.97efb4cb.chunk.css",
-    "main.js": "/LiftFitLog/static/js/main.ca468ffd.chunk.js",
-    "main.js.map": "/LiftFitLog/static/js/main.ca468ffd.chunk.js.map",
-    "runtime-main.js": "/LiftFitLog/static/js/runtime-main.db1793df.js",
-    "runtime-main.js.map": "/LiftFitLog/static/js/runtime-main.db1793df.js.map",
-    "static/js/2.b0be50a0.chunk.js": "/LiftFitLog/static/js/2.b0be50a0.chunk.js",
-    "static/js/2.b0be50a0.chunk.js.map": "/LiftFitLog/static/js/2.b0be50a0.chunk.js.map",
-    "static/js/3.6addae99.chunk.js": "/LiftFitLog/static/js/3.6addae99.chunk.js",
-    "static/js/3.6addae99.chunk.js.map": "/LiftFitLog/static/js/3.6addae99.chunk.js.map",
+    "main.css": "/LiftFitLog/static/css/main.dd6ffabd.chunk.css",
+    "main.js": "/LiftFitLog/static/js/main.d229b573.chunk.js",
+    "main.js.map": "/LiftFitLog/static/js/main.d229b573.chunk.js.map",
+    "runtime-main.js": "/LiftFitLog/static/js/runtime-main.8819e5f5.js",
+    "runtime-main.js.map": "/LiftFitLog/static/js/runtime-main.8819e5f5.js.map",
+    "static/css/2.0cfad52a.chunk.css": "/LiftFitLog/static/css/2.0cfad52a.chunk.css",
+    "static/js/2.66b3d512.chunk.js": "/LiftFitLog/static/js/2.66b3d512.chunk.js",
+    "static/js/2.66b3d512.chunk.js.map": "/LiftFitLog/static/js/2.66b3d512.chunk.js.map",
+    "static/js/3.4fddd136.chunk.js": "/LiftFitLog/static/js/3.4fddd136.chunk.js",
+    "static/js/3.4fddd136.chunk.js.map": "/LiftFitLog/static/js/3.4fddd136.chunk.js.map",
     "index.html": "/LiftFitLog/index.html",
-    "static/css/main.97efb4cb.chunk.css.map": "/LiftFitLog/static/css/main.97efb4cb.chunk.css.map",
-    "static/js/2.b0be50a0.chunk.js.LICENSE.txt": "/LiftFitLog/static/js/2.b0be50a0.chunk.js.LICENSE.txt",
+    "static/css/2.0cfad52a.chunk.css.map": "/LiftFitLog/static/css/2.0cfad52a.chunk.css.map",
+    "static/css/main.dd6ffabd.chunk.css.map": "/LiftFitLog/static/css/main.dd6ffabd.chunk.css.map",
+    "static/js/2.66b3d512.chunk.js.LICENSE.txt": "/LiftFitLog/static/js/2.66b3d512.chunk.js.LICENSE.txt",
     "static/media/footer.css": "/LiftFitLog/static/media/LogoNamePrimaryCircle.b0e7f5ac.png",
     "static/media/nav-bar.css": "/LiftFitLog/static/media/LogoNamePrimaryRectangle.efdffd3e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.db1793df.js",
-    "static/js/2.b0be50a0.chunk.js",
-    "static/css/main.97efb4cb.chunk.css",
-    "static/js/main.ca468ffd.chunk.js"
+    "static/js/runtime-main.8819e5f5.js",
+    "static/css/2.0cfad52a.chunk.css",
+    "static/js/2.66b3d512.chunk.js",
+    "static/css/main.dd6ffabd.chunk.css",
+    "static/js/main.d229b573.chunk.js"
   ]
 }
