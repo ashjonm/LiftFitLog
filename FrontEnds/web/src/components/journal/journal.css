@@ -1,3 +1,52 @@
+.page {
+    display: flex;
+    align-self: stretch;
+    align-content: center;
+    flex-direction: column;
+}
+
+.page-header {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    height: 55px;
+    padding: 10px;
+    border-top: 5px solid #0C181D;
+    background-color: #D37F36;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.page-header div {
+    display: flex;
+    align-items: center;
+    margin: 0px 40px;
+    color: #0C181D;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.page-header button {
+    display: flex; 
+    align-items: center;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 5px;
+    background-color: #234553;
+    text-align: center;
+    color: #F9F9F9;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.page-body{
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    min-height: calc(100vh - 230px);
+    padding: 0px 40px;
+    background-image: linear-gradient(#0C181D, #1E3B48);
+}
+
 .journal {
     display: flex;
     align-self: stretch;

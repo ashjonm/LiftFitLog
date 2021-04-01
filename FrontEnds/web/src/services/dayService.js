@@ -1,6 +1,15 @@
 export function getDays() {
-    return localDays;
+    return localDays.sort((a,b) => b.date - a.date);
 };
+
+export function addDay(day) {
+    let newDay = {...day, id:index++};
+    localDays.push(newDay);
+
+    return Promise.resolve(newDay);
+}
+
+let index = 5;
 
 const baseDay = {
     date: new Date("01/13/2021"),
