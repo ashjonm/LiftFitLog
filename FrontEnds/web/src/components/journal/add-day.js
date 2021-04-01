@@ -5,7 +5,6 @@ import {addDay} from "../../services/dayService";
 
 import "react-datepicker/dist/react-datepicker.css";
 import "./add-day.css";
-import Day from "./day";
 
 Modal.setAppElement('#root')
 
